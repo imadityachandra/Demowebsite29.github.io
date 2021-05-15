@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        body{
+            background-image: url(https://source.unsplash.com/1600x900/?nature,water);
+        }
+        .container{
+            /* width: 900px; */
+            /* margin: auto; */
+            /* border: 3px solid blue; */
+            /* background-color: rgb(167, 170, 119); */
+            border-radius: 20px;
+            
+        }
+        .item{
+            border: 3px solid ;
+            margin: 12px 3px;
+            padding: 12px 10px;
+            background-color: rgb(128 142 163);
+            border-radius: 14px;
+        }
+        #fruits
+        {
+            float: left;
+            width: 40%;
+
+        }
+        #computer
+        {
+            float: right;
+            width: 40%;
+        }
+        #stationary
+        {
+            clear: both;
+        }
+        p,h3{
+            text-align: justify;
+        }
+        .btn{
+            background-color: rgb(121 218 164);
+            padding: 4px 3px;
+            margin: 4px 4px;
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 20px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a :hover{
+            background-color: coral;
+            border: 2px solid black;
+        }
+        .btn:hover{
+            color: darkgoldenrod;
+            background-color: darkgrey;
+            border: 2px solid red;
+        }
+        .navbar{
+                background-color: rgb(14, 13, 13);
+            border-radius: 30px;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li a{
+                color: white;
+                text-decoration: none;
+                padding: 3px 3px;
+        }
+        .navbar li a:hover
+        {
+            color: rgb(255, 0, 119);
+            /* background-color: blue; */
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+             border-radius: 14px;
+             padding: 3px 17px;
+             width: 129px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our Past Projects</a></li>
+                <li><a href="#">Volunteers</a></li>
+                <li><a href="#">Contact us</a></li>
+               <div class="search">
+                   <input type="text" name="search" id="search" placeholder="Search" >
+               </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <hr>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eligendi quisquam adipisci labore nesciunt iure porro deserunt voluptas assumenda modi, ipsam, laboriosam accusantium exercitationem ipsa quis quod, atque eveniet repudiandae.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computers</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eligendi quisquam adipisci labore nesciunt iure porro deserunt voluptas assumenda modi, ipsam, laboriosam accusantium exercitationem ipsa quis quod, atque eveniet repudiandae.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eligendi quisquam adipisci labore nesciunt iure porro deserunt voluptas assumenda modi, ipsam, laboriosam accusantium exercitationem ipsa quis quod, atque eveniet repudiandae.
+            </p> 
+        </div>
+        <a href="//www.google.com" class="btn"> Go for more</a>
+        <button class="btn">Contact us</button>
+
+    </div>
+   
+    
+</body>
+</html>
